@@ -6,7 +6,6 @@ describe('server', function () {
     before(function () {
         server.listen(9009);
     });
-
     after(function () {
         server.close();
     });
