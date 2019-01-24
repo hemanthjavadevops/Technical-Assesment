@@ -14,7 +14,7 @@ describe('server', function () {
 describe('/sayHelloTest', function () {
 
     it('should show welcome message', function (done) {
-        http.get('http://localhost:9009/sayHello', function (response) {
+        http.get('http://localhost:9009/', function (response) {
             var data = '';
 
             response.on('data', function (chunk) {
