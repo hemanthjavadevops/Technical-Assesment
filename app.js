@@ -2,7 +2,7 @@ const express = require('express')
 const application = express()
 const port = 9009
 
-application.get('/sayHello', (request, response) => response.send('Hello World.This is a simple Nodejs application'))
+application.get('/', (request, response) => response.send('Hello World.This is a simple Nodejs application'))
 
 application.get('/appInfo', (request, response) => response.send('"Technical-Assesment": [\n' +
     '  {\n' +
