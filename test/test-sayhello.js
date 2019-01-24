@@ -17,11 +17,11 @@ describe('/sayHelloTest', function () {
         http.get('http://localhost:9009/sayHello', function (response) {
             var data = '';
 
-            res.on('data', function (chunk) {
+            response.on('data', function (chunk) {
                 data += chunk;
             });
 
-            res.on('end', function () {
+            response.on('end', function () {
                 assert.deepStrictEqual('Hello World.This is a simple Nodejs application', data);
                 done();
             });
