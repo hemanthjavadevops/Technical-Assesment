@@ -1,14 +1,11 @@
 FROM node:6
 
-# Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package*.json ./
+COPY package.json /app
 
 RUN npm install
 
-# Bundle app source
-COPY . .
+COPY . /app
 
-EXPOSE 9009
-CMD [ "node", "app.js"]
+CMD ["npm", "start"]
