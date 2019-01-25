@@ -15,7 +15,7 @@ Technical Assessment for pre-interview
 ```
 - use below commands to create and run docker file (the application is configured on 9009 port)
    docker build -t tech-assesment:1.0 .
-   docker run -d -p 9050:9009 tech-assesment:1.0 ``` 
+   docker run -d -p 9050:9009 tech-assesment:1.0
 ```  
 
 ```
